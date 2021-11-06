@@ -1,0 +1,1 @@
+document.getElementById("estudiante"),document.getElementById("codigo"),document.getElementById("curso"),document.getElementById("matricularBtn").addEventListener("click",(function(){alert("EA EA EA COMO TU MENTE MAQUINEA")}));

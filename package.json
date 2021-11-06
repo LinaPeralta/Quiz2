@@ -1,0 +1,30 @@
+{
+  "name": "quiz2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^9.3.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch --progress",
+    "visualize-bundle": "webpack --analyze"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinaPeralta/Quiz2.git"
+  },
+  "author": "Lina Peralta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinaPeralta/Quiz2/issues"
+  },
+  "homepage": "https://github.com/LinaPeralta/Quiz2#readme"
+}
