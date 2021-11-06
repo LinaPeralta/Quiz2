@@ -15,7 +15,7 @@ crearTarjeta(){
     let codigoTarjeta = document.createElement("h4");
     let cursoTarjeta = document.createElement("h4");
 
-    let participacionesTarjeta = document.createElement("h2");
+    let participacionesTarjeta = document.createElement("h4");
 
     let sumarBtn = document.createElement("button");
     let borrarBtn = document.createElement("button");

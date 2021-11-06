@@ -7,7 +7,12 @@ body
     display:flex;
     flex-direction: column;
     font-size: 15px;
+    background-color:cadetblue;
   
+}
+
+#titulo{
+color:white;
 }
 
 .texto{
@@ -16,4 +21,30 @@ body
 
 #matricularBtn{
     margin:5px;
+}
+
+.label{
+    color:white
+}
+
+.tarjetaEstudiante{
+    background-color: azure;
+    
+}
+
+.tarjetaNombre{
+    margin: 10px;
+}
+
+.tarjetaCodigo{
+    margin: 10px;
+}
+
+.tarjetaCurso{
+    margin: 10px;
+}
+
+.tarjetaParti{
+    margin: 10px;
+    font-size: 15px;
 }

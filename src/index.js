@@ -23,6 +23,10 @@ const firebaseApp = initializeApp(firebaseAppConfig);
 
 const nobono = document.getElementById("nonbono");
 
+const bonoPlata = document.getElementById("bonoplata");
+
+const bonoOro = document.getElementById("bonoro");
+
 function obtenerUsuarios(){
     const db = getDatabase();
     const referencia = ref(db,"Usuario");
@@ -51,14 +55,34 @@ const subirDatos = (e,ev)=>{
 
 function cargarInfo(info){
     nobono.innerHTML="";
+    bonoPlata.innerHTML="";
+    bonoOro.innerHTML="";
 
     if (info){
         Object.keys(info).forEach((k,index)=>{
 
             let carta = new tarjeta (info[k]);
-            nobono.appendChild(carta.crearTarjeta());
+           
+         
+            if (info[k].PARTICIPACIONES <= 5){
+                nobono.appendChild(carta.crearTarjeta());
+            }
+
+            if(info[k].PARTICIPACIONES >5 && info[k].PARTICIPACIONES  <= 10 ){
+                
+                bonoPlata.appendChild(carta.crearTarjeta());
+
+            }
+
+            if(info[k].PARTICIPACIONES>10){
+
+                bonoOro.appendChild(carta.crearTarjeta());
+            }
+
         });
     }
+
+    
 }
 
 obtenerUsuarios();
