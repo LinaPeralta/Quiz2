@@ -7,11 +7,12 @@ constructor(usuario){
     this.usuario = usuario;
 }
 
+//crear las tarjetas para los estudiantes
 crearTarjeta(){
     let card = document.createElement("div");
     card.className = "tarjetaEstudiante";
 
-    let nombreTarjeta = document.createElement("h3");
+    let nombreTarjeta = document.createElement("h2");
     let codigoTarjeta = document.createElement("h4");
     let cursoTarjeta = document.createElement("h4");
 
@@ -41,6 +42,7 @@ crearTarjeta(){
     card.appendChild(sumarBtn);
     card.appendChild(borrarBtn);
 
+    //cuando haga click en el boton que se sume
     sumarBtn.addEventListener("click",(e,event)=>{
 
         const db = getDatabase();
@@ -52,6 +54,7 @@ crearTarjeta(){
 
     });
 
+     //cuando haga click en el boton que se borre la tarjeta
     borrarBtn.addEventListener("click",(e,event)=>{
 
         const db = getDatabase();

@@ -24,12 +24,12 @@ color:white;
 }
 
 .label{
-    color:white
+    color:white;
 }
 
 .tarjetaEstudiante{
-    background-color: azure;
     
+    background-color: azure;
 }
 
 .tarjetaNombre{
@@ -48,3 +48,13 @@ color:white;
     margin: 10px;
     font-size: 15px;
 }
+
+
+#nonbono{
+    margin: 15px;
+}
+
+#bonoplata{
+    margin: 15px;
+}
+
